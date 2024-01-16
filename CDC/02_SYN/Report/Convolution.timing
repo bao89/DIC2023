@@ -1,0 +1,75 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : Convolution
+Version: T-2022.03
+Date   : Sun Jan  7 18:31:42 2024
+****************************************
+
+Operating Conditions: PVT_0P7V_25C   Library: asap7sc7p5t_INVBUF_RVT_TT_08302018
+Wire Load Model Mode: top
+
+  Startpoint: weight_valid
+              (input port clocked by clk1)
+  Endpoint: Weight_Buffer_reg[1][0]
+            (rising edge-triggered flip-flop clocked by clk1)
+  Path Group: clk1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk1 (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                 9500.00    9500.00 f
+  weight_valid (in)                                       0.00    9500.00 f
+  U876/Y (INVx1_ASAP7_75t_R)                             99.61    9599.61 r
+  U1006/Y (NOR2xp33_ASAP7_75t_R)                         39.84    9639.45 f
+  U249/Y (OR2x2_ASAP7_75t_R)                             29.27    9668.72 f
+  Weight_Buffer_reg[1][0]/D (ASYNC_DFFHx1_ASAP7_75t_R)
+                                                          0.00    9668.72 f
+  data arrival time                                               9668.72
+
+  clock clk1 (rise edge)                              19000.00   19000.00
+  clock network delay (ideal)                             0.00   19000.00
+  Weight_Buffer_reg[1][0]/CLK (ASYNC_DFFHx1_ASAP7_75t_R)
+                                                          0.00   19000.00 r
+  library setup time                                    -14.41   18985.59
+  data required time                                             18985.59
+  --------------------------------------------------------------------------
+  data required time                                             18985.59
+  data arrival time                                              -9668.72
+  --------------------------------------------------------------------------
+  slack (MET)                                                     9316.87
+
+
+  Startpoint: Out_OFM_reg[0]
+              (rising edge-triggered flip-flop clocked by clk2)
+  Endpoint: Out_OFM[0] (output port clocked by clk2)
+  Path Group: clk2
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk2 (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Out_OFM_reg[0]/CLK (ASYNC_DFFHx1_ASAP7_75t_R)           0.00       0.00 r
+  Out_OFM_reg[0]/QN (ASYNC_DFFHx1_ASAP7_75t_R)           44.11      44.11 r
+  Out_OFM[0] (out)                                        0.00      44.11 r
+  data arrival time                                                 44.11
+
+  clock clk2 (rise edge)                              11000.00   11000.00
+  clock network delay (ideal)                             0.00   11000.00
+  output external delay                               -5500.00    5500.00
+  data required time                                              5500.00
+  --------------------------------------------------------------------------
+  data required time                                              5500.00
+  data arrival time                                                -44.11
+  --------------------------------------------------------------------------
+  slack (MET)                                                     5455.89
+
+
+1

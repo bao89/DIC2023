@@ -1,0 +1,69 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : Convolution
+Version: T-2022.03
+Date   : Sun Jan  7 18:31:42 2024
+****************************************
+
+Operating Conditions: PVT_0P7V_25C   Library: asap7sc7p5t_INVBUF_RVT_TT_08302018
+Wire Load Model Mode: top
+
+  Startpoint: D1/P_reg (rising edge-triggered flip-flop clocked by clk1)
+  Endpoint: D1/P_reg (rising edge-triggered flip-flop clocked by clk1)
+  Path Group: clk1
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk1 (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  D1/P_reg/CLK (ASYNC_DFFHx1_ASAP7_75t_R)                 0.00       0.00 r
+  D1/P_reg/QN (ASYNC_DFFHx1_ASAP7_75t_R)                 53.60      53.60 r
+  D1/U12/Y (XNOR2xp5_ASAP7_75t_R)                        14.51      68.11 f
+  D1/P_reg/D (ASYNC_DFFHx1_ASAP7_75t_R)                   0.00      68.11 f
+  data arrival time                                                 68.11
+
+  clock clk1 (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  D1/P_reg/CLK (ASYNC_DFFHx1_ASAP7_75t_R)                 0.00       0.00 r
+  library hold time                                       1.05       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                -68.11
+  --------------------------------------------------------------------------
+  slack (MET)                                                       67.06
+
+
+  Startpoint: A1_reg[0] (rising edge-triggered flip-flop clocked by clk2)
+  Endpoint: A2_reg[0] (rising edge-triggered flip-flop clocked by clk2)
+  Path Group: clk2
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk2 (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  A1_reg[0]/CLK (ASYNC_DFFHx1_ASAP7_75t_R)                0.00       0.00 r
+  A1_reg[0]/QN (ASYNC_DFFHx1_ASAP7_75t_R)                47.16      47.16 r
+  U1121/Y (INVx1_ASAP7_75t_R)                             7.46      54.62 f
+  A2_reg[0]/D (ASYNC_DFFHx1_ASAP7_75t_R)                  0.00      54.62 f
+  data arrival time                                                 54.62
+
+  clock clk2 (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  A2_reg[0]/CLK (ASYNC_DFFHx1_ASAP7_75t_R)                0.00       0.00 r
+  library hold time                                       2.14       2.14
+  data required time                                                 2.14
+  --------------------------------------------------------------------------
+  data required time                                                 2.14
+  data arrival time                                                -54.62
+  --------------------------------------------------------------------------
+  slack (MET)                                                       52.48
+
+
+1

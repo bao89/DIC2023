@@ -1,0 +1,32 @@
+ 
+****************************************
+Report : area
+Design : Convolution
+Version: T-2022.03
+Date   : Tue Dec 19 15:04:51 2023
+****************************************
+
+Library(s) Used:
+
+    asap7sc7p5t_INVBUF_RVT_TT_08302018 (File: /RAID2/COURSE/dic/dic299/hw5/5_2/02_SYN/asap7sc7p5t_INVBUF_RVT_TT_08302018.db)
+    asap7sc7p5t_SIMPLE_RVT_TT_08302018 (File: /RAID2/COURSE/dic/dic299/hw5/5_2/02_SYN/asap7sc7p5t_SIMPLE_RVT_TT_08302018.db)
+    asap7sc7p5t_SEQ_RVT_TT_08302018 (File: /RAID2/COURSE/dic/dic299/hw5/5_2/02_SYN/asap7sc7p5t_SEQ_RVT_TT_08302018.db)
+
+Number of ports:                          830
+Number of nets:                          4119
+Number of cells:                         2944
+Number of combinational cells:           2755
+Number of sequential cells:               174
+Number of macros/black boxes:               0
+Number of buf/inv:                        591
+Number of references:                      35
+
+Combinational area:               3954.095980
+Buf/Inv area:                      415.238405
+Noncombinational area:            1051.159673
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                  5005.255653
+Total area:                 undefined
+1

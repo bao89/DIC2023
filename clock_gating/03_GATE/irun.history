@@ -1,0 +1,3 @@
+s1(18Dec2023:17:24:34):  irun ../00_TESTBED/TESTBED.v -define GATE -debug -v asap7sc7p5t_SIMPLE_RVT_TT_08302018.v asap7sc7p5t_SEQ_RVT_TT_08302018.v asap7sc7p5t_INVBUF_RVT_TT_08302018.v -nontcglitch -loadpli1 debpli:novas_pli_boot 
+s2(18Dec2023:21:47:06):  irun ../00_TESTBED/TESTBED.v -define GATE -debug -v asap7sc7p5t_SIMPLE_RVT_TT_08302018.v asap7sc7p5t_SEQ_RVT_TT_08302018.v asap7sc7p5t_INVBUF_RVT_TT_08302018.v -nontcglitch -loadpli1 debpli:novas_pli_boot 
+s3(19Dec2023:15:05:23):  irun ../00_TESTBED/TESTBED.v -define GATE -debug -v asap7sc7p5t_SIMPLE_RVT_TT_08302018.v asap7sc7p5t_SEQ_RVT_TT_08302018.v asap7sc7p5t_INVBUF_RVT_TT_08302018.v -nontcglitch -loadpli1 debpli:novas_pli_boot 

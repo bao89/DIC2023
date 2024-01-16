@@ -1,0 +1,143 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : Convolution
+Version: T-2022.03
+Date   : Tue Dec 19 15:04:51 2023
+****************************************
+
+Operating Conditions: PVT_0P7V_25C   Library: asap7sc7p5t_INVBUF_RVT_TT_08302018
+Wire Load Model Mode: top
+
+  Startpoint: Weight_Buffer_reg[7][1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Out_OFM_reg[18]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Weight_Buffer_reg[7][1]/CLK (ASYNC_DFFHx1_ASAP7_75t_R)
+                                                          0.00       0.00 r
+  Weight_Buffer_reg[7][1]/QN (ASYNC_DFFHx1_ASAP7_75t_R)
+                                                         47.66      47.66 r
+  U610/Y (BUFx2_ASAP7_75t_R)                             24.34      71.99 r
+  mult_204_7/b[1] (Convolution_DW_mult_uns_2)             0.00      71.99 r
+  mult_204_7/U265/Y (NAND2xp5_ASAP7_75t_R)               15.09      87.08 f
+  mult_204_7/U256/Y (NOR2xp33_ASAP7_75t_R)               27.60     114.69 r
+  mult_204_7/U146/CON (FAx1_ASAP7_75t_R)                 23.12     137.80 f
+  mult_204_7/U287/Y (INVx1_ASAP7_75t_R)                  16.39     154.19 r
+  mult_204_7/U140/SN (FAx1_ASAP7_75t_R)                  51.26     205.45 r
+  mult_204_7/U335/Y (XOR2xp5_ASAP7_75t_R)                36.43     241.88 r
+  mult_204_7/U238/Y (XOR2x2_ASAP7_75t_R)                 31.82     273.70 f
+  mult_204_7/product[4] (Convolution_DW_mult_uns_2)       0.00     273.70 f
+  add_7_root_add_0_root_add_204_8/B[4] (Convolution_DW01_add_7)
+                                                          0.00     273.70 f
+  add_7_root_add_0_root_add_204_8/U1_4/CON (FAx1_ASAP7_75t_R)
+                                                         21.54     295.24 r
+  add_7_root_add_0_root_add_204_8/U13/Y (INVx1_ASAP7_75t_R)
+                                                         15.50     310.74 f
+  add_7_root_add_0_root_add_204_8/U1_5/CON (FAx1_ASAP7_75t_R)
+                                                         20.36     331.10 r
+  add_7_root_add_0_root_add_204_8/U12/Y (INVx1_ASAP7_75t_R)
+                                                         15.50     346.60 f
+  add_7_root_add_0_root_add_204_8/U1_6/CON (FAx1_ASAP7_75t_R)
+                                                         20.36     366.96 r
+  add_7_root_add_0_root_add_204_8/U11/Y (INVx1_ASAP7_75t_R)
+                                                         15.57     382.53 f
+  add_7_root_add_0_root_add_204_8/U1_7/CON (FAx1_ASAP7_75t_R)
+                                                         20.37     402.90 r
+  add_7_root_add_0_root_add_204_8/U10/Y (INVx1_ASAP7_75t_R)
+                                                         15.56     418.46 f
+  add_7_root_add_0_root_add_204_8/U1_8/CON (FAx1_ASAP7_75t_R)
+                                                         20.37     438.83 r
+  add_7_root_add_0_root_add_204_8/U9/Y (INVx1_ASAP7_75t_R)
+                                                         15.57     454.40 f
+  add_7_root_add_0_root_add_204_8/U1_9/CON (FAx1_ASAP7_75t_R)
+                                                         20.37     474.77 r
+  add_7_root_add_0_root_add_204_8/U8/Y (INVx1_ASAP7_75t_R)
+                                                         15.56     490.34 f
+  add_7_root_add_0_root_add_204_8/U1_10/CON (FAx1_ASAP7_75t_R)
+                                                         20.37     510.71 r
+  add_7_root_add_0_root_add_204_8/U7/Y (INVx1_ASAP7_75t_R)
+                                                         15.57     526.28 f
+  add_7_root_add_0_root_add_204_8/U1_11/CON (FAx1_ASAP7_75t_R)
+                                                         20.37     546.65 r
+  add_7_root_add_0_root_add_204_8/U6/Y (INVx1_ASAP7_75t_R)
+                                                         15.57     562.22 f
+  add_7_root_add_0_root_add_204_8/U1_12/CON (FAx1_ASAP7_75t_R)
+                                                         20.37     582.60 r
+  add_7_root_add_0_root_add_204_8/U5/Y (INVx1_ASAP7_75t_R)
+                                                         15.57     598.16 f
+  add_7_root_add_0_root_add_204_8/U1_13/CON (FAx1_ASAP7_75t_R)
+                                                         20.37     618.54 r
+  add_7_root_add_0_root_add_204_8/U4/Y (INVx1_ASAP7_75t_R)
+                                                         15.56     634.09 f
+  add_7_root_add_0_root_add_204_8/U1_14/CON (FAx1_ASAP7_75t_R)
+                                                         20.37     654.46 r
+  add_7_root_add_0_root_add_204_8/U3/Y (INVx1_ASAP7_75t_R)
+                                                         15.56     670.03 f
+  add_7_root_add_0_root_add_204_8/U1_15/SN (FAx1_ASAP7_75t_R)
+                                                         37.57     707.60 f
+  add_7_root_add_0_root_add_204_8/U27/Y (INVx1_ASAP7_75t_R)
+                                                         18.83     726.43 r
+  add_7_root_add_0_root_add_204_8/SUM[15] (Convolution_DW01_add_7)
+                                                          0.00     726.43 r
+  add_3_root_add_0_root_add_204_8/B[15] (Convolution_DW01_add_5)
+                                                          0.00     726.43 r
+  add_3_root_add_0_root_add_204_8/U1_15/SN (FAx1_ASAP7_75t_R)
+                                                         38.82     765.25 f
+  add_3_root_add_0_root_add_204_8/U29/Y (INVx1_ASAP7_75t_R)
+                                                         18.83     784.09 r
+  add_3_root_add_0_root_add_204_8/SUM[15] (Convolution_DW01_add_5)
+                                                          0.00     784.09 r
+  add_2_root_add_0_root_add_204_8/B[15] (Convolution_DW01_add_4)
+                                                          0.00     784.09 r
+  add_2_root_add_0_root_add_204_8/U1_15/SN (FAx1_ASAP7_75t_R)
+                                                         35.94     820.03 r
+  add_2_root_add_0_root_add_204_8/U31/Y (INVx1_ASAP7_75t_R)
+                                                         17.51     837.54 f
+  add_2_root_add_0_root_add_204_8/SUM[15] (Convolution_DW01_add_4)
+                                                          0.00     837.54 f
+  add_0_root_add_0_root_add_204_8/B[15] (Convolution_DW01_add_0)
+                                                          0.00     837.54 f
+  add_0_root_add_0_root_add_204_8/U1_15/CON (FAx1_ASAP7_75t_R)
+                                                         22.82     860.36 r
+  add_0_root_add_0_root_add_204_8/U9/Y (INVx1_ASAP7_75t_R)
+                                                         15.27     875.63 f
+  add_0_root_add_0_root_add_204_8/U1_16/CON (FAx1_ASAP7_75t_R)
+                                                         20.30     895.92 r
+  add_0_root_add_0_root_add_204_8/U8/Y (INVx1_ASAP7_75t_R)
+                                                         15.27     911.19 f
+  add_0_root_add_0_root_add_204_8/U1_17/CON (FAx1_ASAP7_75t_R)
+                                                         20.30     931.49 r
+  add_0_root_add_0_root_add_204_8/U7/Y (INVx1_ASAP7_75t_R)
+                                                         15.56     947.05 f
+  add_0_root_add_0_root_add_204_8/U4/Y (XOR2xp5_ASAP7_75t_R)
+                                                         19.97     967.03 f
+  add_0_root_add_0_root_add_204_8/SUM[18] (Convolution_DW01_add_0)
+                                                          0.00     967.03 f
+  U21/Y (NAND2xp5_ASAP7_75t_R)                           11.33     978.36 r
+  Out_OFM_reg[18]/D (ASYNC_DFFHx1_ASAP7_75t_R)            0.00     978.36 r
+  data arrival time                                                978.36
+
+  clock clk (rise edge)                                1000.00    1000.00
+  clock network delay (ideal)                             0.00    1000.00
+  Out_OFM_reg[18]/CLK (ASYNC_DFFHx1_ASAP7_75t_R)          0.00    1000.00 r
+  library setup time                                    -20.96     979.04
+  data required time                                               979.04
+  --------------------------------------------------------------------------
+  data required time                                               979.04
+  data arrival time                                               -978.36
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.68
+
+
+1
